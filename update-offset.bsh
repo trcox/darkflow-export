@@ -1,0 +1,5 @@
+#!/bin/bash
+
+OFFSET="20"
+
+sed -i -e 's/self.offset = 16/self.offset = ${OFFSET}/g' ./darkflow/utils/loader.py
