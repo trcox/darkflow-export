@@ -100,5 +100,8 @@ ENV/
 # mypy
 .mypy_cache/
 
-#weight files
+# weight files
 weights/
+
+# darkflow
+darkflow/
