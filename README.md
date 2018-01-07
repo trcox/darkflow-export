@@ -15,7 +15,8 @@ Anaconda2 for Windows
 	- `C:/Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\bin` 
 	- `C:\Program Files\NVIDIA GPU Computing Toolkit\cudnn6\cuda\bin`
 ```{bash}
-conda create -n darkflow-export python=3.5
+conda create -n darkflow-export python=3.6
+>>>>>>> 718289032d695ecbe38e0a4897815978bbf79aa2
 source activate darkflow-export
 pip install --ignore-installed --upgrade tensorflow-gpu cython
 conda install -c menpo opencv3 
