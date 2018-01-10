@@ -1,6 +1,6 @@
 # darkflow-export
 
-Python library that uses the darkflow package to export using JSON. 
+Python library that uses the darkflow package to export using JSON.
 
 Focusing on cv2 to have access to the camera
 
@@ -12,13 +12,13 @@ Anaconda2 for Windows
 - (cuda8)[https://developer.nvidia.com/cuda-downloads]
 - (cudnn6)[https://developer.nvidia.com/rdp/cudnn-download]
 - add cuda8 and cudnn6 to PATH using default installation
-	- `C:/Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\bin` 
+	- `C:/Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\bin`
 	- `C:\Program Files\NVIDIA GPU Computing Toolkit\cudnn6\cuda\bin`
 ```{bash}
 ./update-offset.bsh
 conda create -n darkflow-export python=3.6
 source activate darkflow-export
 pip install --ignore-installed --upgrade tensorflow-gpu cython
-conda install -c menpo opencv3 
-cd darkflow && python setup.py build_ext --inplace && pip install -e . && pip install .
+conda install -c menpo opencv3
+cd darkflow && python setup.py build_ext --inplace && pip install -e . && pip install . && cd ..
 ```
