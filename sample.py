@@ -9,8 +9,7 @@ options = {
     "gpu": 0.5,
     "address": 'localhost',
     "port": 48051,
-    "UDP": True,
-    "json": True}
+    "UDP": True}
 tfnet = TFNet(options)
 
 #imgcv = cv2.imread("./darkflow/sample_img/sample_dog.jpg")
