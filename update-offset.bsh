@@ -1,5 +1,3 @@
 #!/bin/bash
-FROM_OFFSET="16"
-TO_OFFSET="20"
 
-sed -i -e 's/self.offset = ${FROM_OFFSET}/self.offset = ${TO_OFFSET}/g' ./darkflow/darkflow/utils/loader.py
+sed -i 's/self.offset = 16/self.offset = 20/g' ./darkflow/darkflow/utils/loader.py
