@@ -1,0 +1,7 @@
+#!/bin/bash
+
+./update-offset.bsh
+conda create -n darkflow-export python=3.5 -c menpo --yes --file requirements.txt
+source activate darkflow-export
+cd darkflow && python setup.py build_ext --inplace && pip install -e . && pip install . ; cd ..
+mkdir weights
