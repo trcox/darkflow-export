@@ -18,12 +18,7 @@ Anaconda2 for Windows
 	- `C:\Program Files\NVIDIA GPU Computing Toolkit\cudnn6\cuda\bin`
 
 ```{bash}
-./update-offset.bsh
-conda create -n darkflow-export python=3.5
-source activate darkflow-export
-pip install --ignore-installed --upgrade tensorflow-gpu cython
-conda install -c menpo opencv3
-cd darkflow && python setup.py build_ext --inplace && pip install -e . && pip install . && cd ..
+./install.bsh
 ```
 
 ### Linux
