@@ -102,6 +102,7 @@ ENV/
 
 # weight files
 weights/
+*.weights
 
 # darkflow
 summary/
